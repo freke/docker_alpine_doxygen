@@ -2,7 +2,7 @@ FROM alpine
 
 RUN apk update
 RUN apk upgrade --available
-RUN apk add --update-cache doxygen graphviz ttf-ubuntu-font-family
+RUN apk add --update-cache doxygen graphviz ttf-freefont
 RUN rm -rf /var/cache/apk/*
 
 VOLUME /doc
